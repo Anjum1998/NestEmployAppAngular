@@ -27,7 +27,7 @@ readValue=()=>
         let userId=response.userId
         console.log(userId)
         localStorage.setItem("userInfo",userId)
-        this.router.navigate(['/viewall'])
+        this.router.navigate(['/empview'])
       }
     }
   )
