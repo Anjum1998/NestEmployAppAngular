@@ -7,6 +7,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 const myRoute:Routes=[
 {
   path:"",
@@ -16,7 +17,8 @@ const myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavbarAdminComponent
   ],
   imports: [
     BrowserModule,
