@@ -8,17 +8,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { AddEmployComponent } from './add-employ/add-employ.component';
 const myRoute:Routes=[
 {
   path:"",
   component:AdminLoginComponent
+},
+{
+  path:"addemp",
+  component:AddEmployComponent
 }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    NavbarAdminComponent
+    NavbarAdminComponent,
+    AddEmployComponent
   ],
   imports: [
     BrowserModule,
