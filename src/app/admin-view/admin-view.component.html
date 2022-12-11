@@ -1,0 +1,33 @@
+<app-navbar-admin></app-navbar-admin>
+
+<div class="container">
+    <div class="row g-3 m-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+          <table class="table table-bordered border-dark">
+            <thead>
+              <tr>
+                <th scope="col">EmpCode</th>
+                <th scope="col">EmpName</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Company</th>
+                <th scope="col">Task</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of data">
+                <td>{{i.empcode}}</td>
+                <td>{{i.empname}}</td>
+                <td>{{i.designation}}</td>
+                <td>{{i.company}}</td>
+                <td>{{i.task}}</td>
+                <td>{{i.status}}</td>
+              </tr>
+            </tbody>
+          </table>
+            
+
+        </div>
+    </div>
+</div>

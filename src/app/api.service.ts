@@ -16,4 +16,8 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/addtask",data)
   }
+  viewAllTask=()=>
+  {
+    return this.http.get("http://localhost:8080/viewall")
+  }
 }
