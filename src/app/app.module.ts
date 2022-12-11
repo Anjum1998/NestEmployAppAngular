@@ -13,6 +13,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { AdminViewComponent } from './admin-view/admin-view.component';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
 import { EmpViewComponent } from './emp-view/emp-view.component';
+import { NavbarEmpComponent } from './navbar-emp/navbar-emp.component';
 const myRoute:Routes=[
 {
   path:"",
@@ -49,7 +50,8 @@ const myRoute:Routes=[
     AddTaskComponent,
     AdminViewComponent,
     EmpLoginComponent,
-    EmpViewComponent
+    EmpViewComponent,
+    NavbarEmpComponent
   ],
   imports: [
     BrowserModule,
