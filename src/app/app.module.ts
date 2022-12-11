@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { AddEmployComponent } from './add-employ/add-employ.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 const myRoute:Routes=[
 {
   path:"",
@@ -17,6 +18,11 @@ const myRoute:Routes=[
 {
   path:"addemp",
   component:AddEmployComponent
+},
+{
+  path:"addtask",
+  component:AddTaskComponent
+
 }
 ]
 @NgModule({
@@ -24,7 +30,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     NavbarAdminComponent,
-    AddEmployComponent
+    AddEmployComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
