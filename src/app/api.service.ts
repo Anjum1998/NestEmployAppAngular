@@ -28,4 +28,8 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/empview",data)
   }
+  statusUpdate=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/update",data)
+  }
 }

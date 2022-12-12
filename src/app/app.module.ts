@@ -14,6 +14,7 @@ import { AdminViewComponent } from './admin-view/admin-view.component';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
 import { EmpViewComponent } from './emp-view/emp-view.component';
 import { NavbarEmpComponent } from './navbar-emp/navbar-emp.component';
+import { TaskStatusComponent } from './task-status/task-status.component';
 const myRoute:Routes=[
 {
   path:"",
@@ -39,6 +40,10 @@ const myRoute:Routes=[
 {
   path:"empview",
   component:EmpViewComponent
+},
+{
+  path:"status",
+  component:TaskStatusComponent
 }
 ]
 @NgModule({
@@ -51,7 +56,8 @@ const myRoute:Routes=[
     AdminViewComponent,
     EmpLoginComponent,
     EmpViewComponent,
-    NavbarEmpComponent
+    NavbarEmpComponent,
+    TaskStatusComponent
   ],
   imports: [
     BrowserModule,
