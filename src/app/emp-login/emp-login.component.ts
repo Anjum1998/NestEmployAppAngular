@@ -19,15 +19,19 @@ readValue=()=>
   this.api.employLogin(data).subscribe(
     (response:any)=>
     {
+      this.username=""
+      this.password=""
       console.log(response)
-      if (response.length==0) {
-        alert("invalid ")
-      } else {
+      if (response.status=="success") {
         this.searchEmp=response;
         let userId=response.userId
         console.log(userId)
         localStorage.setItem("userInfo",userId)
         this.router.navigate(['/empview'])
+       
+      } else {
+        alert("invalid ")
+        
       }
     }
   )
